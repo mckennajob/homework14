@@ -17,4 +17,5 @@ const ArticleSchema = new Schema({
 
 const Article = mongoose.model("Article", ArticleSchema); // register your Schema
 
+
 module.exports = Article;

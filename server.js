@@ -1,10 +1,11 @@
 const mongoose = require("mongoose");
 const cheerio = require('cheerio');
 const request = require('request');
-var express = require('express');
-var exphbs = require('express-handlebars');
+const express = require('express');
+const exphbs = require('express-handlebars');
 const Article = require("./models/article");
-var app = express();
+const bodyParser = require("body-parser");
+const app = express();
 
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
